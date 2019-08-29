@@ -1,4 +1,4 @@
-# Datadog Install by Ansible
+# Install Datadog Agent with Ansible
 
 Amazon Linux インスタンス (ローカル/リモート) にDatadog Agentをインストールする実験
 
