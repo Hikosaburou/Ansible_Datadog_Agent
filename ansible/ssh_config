@@ -1,0 +1,4 @@
+Host sub_instance
+    Hostname 10.113.1.206
+    User ec2-user
+    IdentityFile ~/.ssh/keys/sub_key

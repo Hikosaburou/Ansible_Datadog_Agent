@@ -1,0 +1,18 @@
+datadog_api_key: "{{ vault_dd_api_key }}"
+datadog_checks:
+  process:
+    init_config:
+    instances:
+      - name: ssh
+        search_string: ['ssh', 'sshd' ]
+      - name: ntpd 
+        search_string: ['ntp', ntpd']
+      - name: syslog
+        search_string: ['rsyslogd']
+        cpu_check_interval: 0.2
+        exact_match: true
+        ignore_denied_access: true
+      - name: crond
+        search_string: ['crond']
+      - name: httpd
+        search_string: ['httpd']

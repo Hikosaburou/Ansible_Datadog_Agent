@@ -1,0 +1,5 @@
+[pub]
+localhost ansible_connection=local
+
+[sub]
+sub_instance
